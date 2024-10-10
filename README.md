@@ -1,5 +1,5 @@
 ### KANEX: KAN-based Express Model
-**KANEX** (Kolmogorov-Arnold Network Express Model) is a lightweight and efficient language model based on Kolmogorov-Arnold Networks (KANs). Despite its compact size, KANEX is designed to be highly expressive and capable of handling long-sequence natural language processing (NLP) tasks. Built with the goal of minimizing computational complexity, it integrates KAN-based attention mechanisms to offer scalable performance while remaining suitable for devices with limited resources, such as laptops or free-tier cloud GPUs.
+**KANEX (Kolmogorov-Arnold Network Express Model)** is a lightweight and efficient language model based on Kolmogorov-Arnold Networks (KANs). Despite its compact size, KANEX is designed to be highly expressive and capable of handling a variety of natural language processing (NLP) tasks, including text generation. Built with the goal of minimizing computational complexity, it integrates KAN-based attention mechanisms to offer scalable performance while remaining suitable for devices with limited resources, such as laptops or free-tier cloud GPUs.
 
 ## Key Features:
 
@@ -12,6 +12,7 @@
 **Memory Efficient:** Optimized for long-sequence tasks with enhanced memory efficiency, using techniques like gradient checkpointing.
 
 ## Applications:
+Text Generation
 
 Document Summarization
 
