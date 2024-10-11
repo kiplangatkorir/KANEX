@@ -2,8 +2,9 @@ import torch
 import torch.nn.functional as F
 from typing import Optional, List
 import argparse
-from model import KANEX
-from train import SimpleTokenizer
+from kanex.model import KANEX
+from kanex.train import SimpleTokenizer
+
 
 def generate(
     model: KANEX,
