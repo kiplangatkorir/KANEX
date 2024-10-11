@@ -4,7 +4,7 @@ from torch.utils.data import Dataset, DataLoader
 from typing import List, Optional
 import os
 from tqdm import tqdm
-from kanex.model import KANEX
+from model import KANEX
 
 class SimpleTokenizer:
     """Basic tokenizer for demonstration"""
