@@ -26,3 +26,9 @@ Language Understanding
 
 KANEX leverages the Kolmogorov-Arnold Theorem to approximate complex functions through hierarchical and multi-head local attention. This allows the model to efficiently manage both computational and memory resources, while maintaining high performance on NLP tasks.
 
+## References
+
+Kolmogorov, A. N. (1957). On the representation of continuous functions of many variables by superposition of continuous functions of one variable and addition. Doklady Akademii Nauk SSSR, 114(5), 953-956.
+
+## Acknowledgements
+This project is inspired by the work on Kolmogorov-Arnold representation and its applications in machine learning. We thank the researchers and developers who have contributed to this field.
