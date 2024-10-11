@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from typing import Optional, Dict
+from typing import Optional
 import math
 
 class KANAttention(nn.Module):
@@ -104,16 +104,17 @@ class KANEX(nn.Module):
         return logits
     
     def save_pretrained(self, path: str):
-        """Save model weights and config"""
+        """Save model weights and config."""
         torch.save({
             'config': self.config,
             'state_dict': self.state_dict()
         }, path)
     
     @classmethod
-    def from_pretrained(cls, path: str, device: str = 'cuda'):
-        """Load model from saved weights"""
+    def from_pretrained(cls, path: str, device: str = 'cpu'):
+        """Load model from saved weights."""
         checkpoint = torch.load(path, map_location=device)
         model = cls(**checkpoint['config'])
         model.load_state_dict(checkpoint['state_dict'])
         return model.to(device)
+
