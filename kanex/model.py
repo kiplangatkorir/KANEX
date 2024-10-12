@@ -69,12 +69,4 @@ class KANTextGenerator(nn.Module):
         return logits  # Return unnormalized predictions for each token
 
 
-# Example usage:
-if __name__ == "__main__":
-    tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-    tokenizer.pad_token = tokenizer.eos_token
-
-    model = KANTextGenerator(vocab_size=len(tokenizer), embed_dim=512, hidden_dim=1024, num_splines=5)
-    input_ids = torch.tensor(tokenizer.encode("The history of AI", return_tensors='pt'))
-    logits = model(input_ids)
-    print(logits)
+#
